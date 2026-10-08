@@ -1,6 +1,5 @@
 from app.db.database import Base, engine
-from app.models import Evidence, Lease, Unit
-
+import app.models
 
 def init_db() -> None:
     Base.metadata.create_all(bind=engine)

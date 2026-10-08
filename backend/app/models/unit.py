@@ -94,3 +94,7 @@ class Unit(Base):
     leases: Mapped[list["Lease"]] = relationship(
         back_populates="unit",
     )
+
+    issues: Mapped[list["PropertyIssue"]] = relationship(
+        back_populates="unit",
+    )
